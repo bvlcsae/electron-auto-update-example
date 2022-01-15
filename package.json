@@ -1,0 +1,22 @@
+{
+  "name": "electron-auto-update-example",
+  "version": "1.0.0",
+  "main": "main.js",
+  "license": "MIT",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/bvlcsae/electron-auto-update-example.git"
+  },
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder build --mac --publish never",
+    "deploy": "electron-builder build --mac --publish always"
+  },
+  "devDependencies": {
+    "electron": "^16.0.7",
+    "electron-builder": "^22.14.5"
+  },
+  "dependencies": {
+    "electron-updater": "^4.6.1"
+  }
+}
