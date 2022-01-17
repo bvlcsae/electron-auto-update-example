@@ -4,19 +4,20 @@
   "main": "main.js",
   "license": "MIT",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/bvlcsae/electron-auto-update-example.git"
+    "type": "git",
+    "url": "https://github.com/bvlcsae/electron-auto-update-example.git"
   },
   "scripts": {
     "start": "electron .",
-    "build": "electron-builder build --mac --publish never",
-    "deploy": "electron-builder build --mac --publish always"
+    "build": "electron-builder build --win --publish never",
+    "deploy": "electron-builder build --win --publish always"
   },
   "devDependencies": {
     "electron": "^16.0.7",
-    "electron-builder": "^22.14.5"
+    "electron-builder": "^22.14.5",
+    "electron-log": "^4.4.4"
   },
   "dependencies": {
-    "electron-updater": "^4.6.1"
+    "electron-updater": "^4.0.0"
   }
 }

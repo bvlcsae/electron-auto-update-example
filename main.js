@@ -1,9 +1,17 @@
 const { app, BrowserWindow, ipcMain } = require('electron');
 const { autoUpdater } = require('electron-updater');
+const log = require('electron-log')
+
+console.log = log.log
+log.transports.file.level = 'info';
+autoUpdater.logger = log;
 
 let mainWindow;
 
-function createWindow () {
+autoUpdater.setFeedURL('http://113.200.234.211:5050/update/windows_64/')
+autoUpdater.on('checing-for')
+
+function createWindow() {
     mainWindow = new BrowserWindow({
         width: 800,
         height: 600,
