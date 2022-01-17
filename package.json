@@ -4,8 +4,8 @@
   "main": "main.js",
   "license": "MIT",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/bvlcsae/electron-auto-update-example.git"
+    "type": "git",
+    "url": "https://github.com/bvlcsae/electron-auto-update-example.git"
   },
   "scripts": {
     "start": "electron .",
@@ -14,7 +14,9 @@
   },
   "devDependencies": {
     "electron": "^16.0.7",
-    "electron-builder": "^22.14.5"
+    "electron-builder": "^22.14.5",
+    "node-fetch": "^2.6.6",
+    "progress-stream": "^2.0.0"
   },
   "dependencies": {
     "electron-updater": "^4.6.1"
